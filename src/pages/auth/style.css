@@ -1,0 +1,71 @@
+/* Global resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .signin-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .signin-page {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 350px;
+    width: 100%;
+  }
+  
+  .signin-page p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .signinbtn {
+    background-color: #4285f4; /* Google's blue color */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .signinbtn:hover {
+    background-color: #357ae8; /* Slightly darker blue */
+    transform: scale(1.05);
+  }
+  
+  .signinbtn:active {
+    background-color: #2b62c4; /* Even darker for active state */
+    transform: scale(0.98);
+  }
+  
+  /* For small devices */
+  @media (max-width: 500px) {
+    .signin-page {
+      padding: 30px;
+      width: 90%;
+    }
+  
+    .signin-page p {
+      font-size: 1rem;
+    }
+  
+    .signinbtn {
+      padding: 10px 15px;
+      font-size: 0.9rem;
+    }
+  }
+  
